@@ -1,0 +1,13 @@
+class BsiAdmonitionBlock {
+    +type: BsiAdmonitionType {
+       definition {
+         Types of admonition specific to BSI.
+       }
+    }
+    +target: IdElement {
+       definition {
+         Referent of a commentary.
+       }
+    }
+}
+

@@ -1,0 +1,6 @@
+class IsoAdmonitionBlock <<IsoDocument>> {
+  definition {
+    A sidebar block outside of the main flow of text,
+    conveying particular warnings or supplementary text to the reader.
+  }
+}

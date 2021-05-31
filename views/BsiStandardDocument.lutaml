@@ -1,0 +1,40 @@
+diagram Bsi_BsiStandardDocument {
+  include ../models/iso_document/IsoStandardDocument.lutaml
+  include ../models/bsi_document/BsiStandardDocument.lutaml
+  include ../models/iso_document/blocks/IsoAdmonitionBlock.lutaml
+  include ../models/iso_document/blocks/IsoAdmonitionType.lutaml
+  include ../models/bsi_document/blocks/BsiAdmonitionBlock.lutaml
+  include ../models/bsi_document/blocks/BsiAdmonitionType.lutaml
+  include ../models/basic_document/idelements/IdElement.lutaml
+
+  association {
+    owner IsoStandardDocument
+    member BsiStandardDocument
+    owner_type inheritance
+  }
+  association {
+    owner BsiStandardDocument
+    member BsiAdmonitionBlock
+    owner_type direct
+  }
+  association {
+    owner IsoAdmonitionBlock
+    member BsiAdmonitionBlock
+    owner_type inheritance
+  }
+  association {
+    owner IsoAdmonitionType
+    member BsiAdmonitionType
+    owner_type inheritance
+  }
+  association {
+    owner BsiAdmonitionBlock
+    member IdElement
+    owner_type direct
+  }
+  association {
+    owner BsiAdmonitionBlock
+    member BsiAdmonitionType
+    owner_type direct
+  }
+}

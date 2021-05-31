@@ -1,0 +1,5 @@
+enum IsoAdmonitionType {
+  definition {
+    Types of admonition specific to ISO/IEC.
+  }
+}

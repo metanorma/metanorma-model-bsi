@@ -1,0 +1,12 @@
+class BsiStandardDocument {
+    definition {
+      BSI Standards document.
+    }
+    +bibdata: BsiBibliographicItem {
+      definition {
+      Bibliographic description of the document itself, expressed in the Relaton
+      model.
+      }
+    }
+}
+

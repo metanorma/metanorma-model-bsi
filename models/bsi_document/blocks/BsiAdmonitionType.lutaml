@@ -1,0 +1,10 @@
+enum BsiAdmonitionType {
+  definition {
+    Types of admonition specific to BSI.
+  }
+  commentary {
+    definition {
+      Commentary.
+    }
+  }
+}
