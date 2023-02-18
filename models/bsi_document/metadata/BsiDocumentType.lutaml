@@ -73,4 +73,9 @@ enum BsiDocumentType {
       Industry Technical Agreement (adopted from IEC).
     }
   }
+  expertCommentary {
+    definition {
+      Expert Commentary (on another document).
+    }
+  }
 }
