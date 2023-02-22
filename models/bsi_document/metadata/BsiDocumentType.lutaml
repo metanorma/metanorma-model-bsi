@@ -68,6 +68,18 @@ enum BsiDocumentType {
       Guide.
     }
   }
+  expertCommentary {
+    definition {
+      Expert commentary. e.g. BS EN ISO 13485:2016 Expert commentary.
+    }
+  }
+  vocabulary {
+    definition {
+      Compendium of terms and definitions, which helps harmonize the use of
+      language within a given sector, field or discipline.
+      e.g. BS 8887:2009
+    }
+  }
   industryTechnicalAgreement {
     definition {
       Industry Technical Agreement (adopted from IEC).
