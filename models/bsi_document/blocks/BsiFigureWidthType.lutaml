@@ -1,0 +1,20 @@
+enum BsiFigureWidthType {
+  definition {
+    Width of figure under BSI
+  }
+  narrow {
+    definition {
+      Narrow.
+    }
+  }
+  text-width {
+    definition {
+      Text Width (default).
+    }
+  }
+  full-page-width {
+    definition {
+      Full Page Width.
+    }
+  }
+}

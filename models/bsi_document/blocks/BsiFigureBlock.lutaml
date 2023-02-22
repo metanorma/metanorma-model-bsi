@@ -1,0 +1,8 @@
+class BsiFigureBlock {
+    +width: BsiFigureWidthType {
+       definition {
+         Width of figure.
+       }
+    }
+}
+
