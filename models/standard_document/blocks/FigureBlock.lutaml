@@ -1,2 +1,5 @@
-FigureBlock <<StandardDocument>> {
+class FigureBlock <<StandardDocument>> {
+  definition {
+    Base class of figures for a StandardDocument. 
+  }
 }

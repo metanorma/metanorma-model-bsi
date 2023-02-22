@@ -6,9 +6,6 @@ diagram IsoDoc_IsoBibliographicItem {
   include ../models/standard_document/metadata/IcsType.lutaml
   include ../models/standard_document/metadata/StructuredIdentifierType.lutaml
   include ../models/basic_document/idelements/Image.lutaml
-  include ../models/standard_document/blocks/FigureBlock.lutaml
-  include ../models/bsi_document/blocks/BsiFigureBlock.lutaml
-  include ../models/bsi_document/blocks/BsiFigureWidthType.lutaml
 
   association {
     owner BsiBibliographicItem
@@ -38,16 +35,6 @@ diagram IsoDoc_IsoBibliographicItem {
   association {
     owner BsiBibDataExtensionType
     member Image
-    owner_type direct
-  }
-  association {
-    owner FigureBlock
-    member BsiFigureBlock
-    owner_type inheritance
-  }
-  association {
-    owner BsiFigureBlock
-    member BsiFigureWidthType
     owner_type direct
   }
 }
