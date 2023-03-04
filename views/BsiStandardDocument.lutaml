@@ -7,8 +7,10 @@ diagram Bsi_BsiStandardDocument {
   include ../models/bsi_document/blocks/BsiAdmonitionType.lutaml
   include ../models/basic_document/idelements/IdElement.lutaml
   include ../models/standard_document/blocks/FigureBlock.lutaml
+  include ../models/standard_document/blocks/TableBlock.lutaml
   include ../models/bsi_document/blocks/BsiFigureBlock.lutaml
   include ../models/bsi_document/blocks/BsiFigureWidthType.lutaml
+  include ../models/bsi_document/blocks/BsiTableBlock.lutaml
 
   association {
     owner IsoStandardDocument
@@ -49,5 +51,10 @@ diagram Bsi_BsiStandardDocument {
     owner BsiFigureBlock
     member BsiFigureWidthType
     owner_type direct
+  }
+  association {
+    owner TableBlock
+    member BsiTableBlock
+    owner_type inheritance
   }
 }

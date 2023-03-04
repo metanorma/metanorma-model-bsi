@@ -1,2 +1,5 @@
-TableBlock <<StandardDocument>> {
+class TableBlock <<StandardDocument>> {
+  definition {
+    Base class of tables for a StandardDocument. 
+  }
 }
